@@ -1,28 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head> 
+        <meta charset="UTF-8"> <!--Defining the character set for the computer as it doesn't understand human language-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--defining the initial view on all device, i.e mobiles,tablets, and desktops-->
+        <meta name="keywords" content="HTML, CSS"> <!--used for SEO, though nowadays most search engines don't need them-->
+        <meta name="description" content=""> <!--{Hint-just type meta: to get this element}giving a brief information about a webpage, esp the few words that appear when you do a search, before clibking the link to the website..GOOD for SEO-->
         <title>DocuVault - Securing Your Important Documents in the Digital Age</title>
         <style>
             img {
-                width:300px;
-                border-radius: 150px;
+                width:200px;
+                border-radius:100px;
                 float: left;
                 margin-right:10px;
 
                 }
                 p.username {
                     font-weight: bold;
-
+                }
+                em {
+                    color:brown;
+                    font-style: italic;
                 }
 
         </style>
     </head>
    
     <body>
-<img src="mydocsbank logo.png" alt="Mydocsbank Project Logo">
-            <p class="username">tweeter@AugastineNdeti</p>
-            <p>
-        Problem: <em><b>In today's world, we still rely on hard copies of important documents like IDs, passports, certificates, etc. This leads to numerous problems:</b></em>
+        <a href="about.html">About Me</a> <!--1. you can have a relative or absolute url;;;relative means the pages are in same folder, while absolute means different folder-->
+        <!--e.g [<a href="about.html">About Me</a>] is a relative url, while [<a href="Company/about.html">About Me</a>] is an absolute url, where Company is another sub-folder inside the main folder-->
+        <!--2. If referencing to an image in the other page, do this,put the image's element in the place where you write the other page's name i.e[ <a href="about.html"> <img src="mydocsbank logo.png" alt="Mydocsbank Project Logo"> </a>],,,this image will be clickable-->
+<img src="images/mydocsbank logo.png" alt="Mydocsbank Project Logo">
+            <p class="username"><em> &copy;&lt; tweeter@AugastineNdeti &gt;!</em></p> <!--highlighted the username words'tweeter@AugastineNdeti'', then used the vsCode menu view-then click 'command palette'>then searched "wrap with abbreviation"..just a cool trick to put elements on highleted part only-->
+            <!--also used the &lt; and &gt to mean less than, or greater than symbols..since these are special characters in html and can't be used dierctly-->
+            <!--again used the  '&copy'; to insert the 'copyright symbol'-->
+            <!--since you can't memorize all, For all symbols you can refer to this website "https://www.w3schools.com/charsets/ref_html_symbols.asp"-->
+            <!--You may want two words following each other to be always together, not moving one to the other line..so we use the element '&nbsp;' between the 2 words -->
+            <!--Giving descriptive image naming is recommended for SEO, so give images quality correct names-->
+            
+        <p>
+        Problem: <em><strong>In today's world, we still rely on hard copies of important documents like IDs, passports, certificates, etc. This leads to numerous&nbsp; problems:</strong></em> <!--just decided to use the "strong element instead of "b" element, as b is considered outdated, and also html is not used for styling"-->
 
     <ul>
         <li>Carrying around physical documents is inconvenient and they can easily be lost, damaged or stolen.</li>
@@ -31,5 +47,6 @@
         <li>Managing and organizing a large number of physical documents is a challenge. </li>
     </ul> 
     </p>
+
 </body>
 </html>
